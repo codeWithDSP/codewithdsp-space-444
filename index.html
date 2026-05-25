@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050816" />
+  <meta name="description"
+    content="CodeWithDSP - Divyanshu Prajapati's 3D space themed full-stack developer portfolio." />
+  <meta name="keywords"
+    content="Divyanshu Prajapati, CodeWithDSP, DSP, full-stack developer, portfolio, MERN, JavaScript, web developer" />
+  <meta name="author" content="Divyanshu Prajapati" />
+  <meta property="og:title" content="CodeWithDSP | Full-Stack Developer" />
+  <meta property="og:description" content="A modern 3D portfolio for Divyanshu Prajapati, aka DSP." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codewithdsp.com" />
+
+  <title>CodeWithDSP | 3D Full-Stack Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css?v=portfolio-ready-20260517" />
+</head>
+
+<body>
+  <canvas id="space-canvas" class="space-canvas" aria-hidden="true"></canvas>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <header class="header">
+    <a href="#home" class="logo" aria-label="CodeWithDSP home">
+      <span class="logo__mark">DSP</span>
+      <span class="logo__text">CodeWithDSP</span>
+    </a>
+
+    <button class="menu-toggle" id="menu-icon" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Journey</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home section-shell" id="home">
+      <div class="home__inner">
+        <div class="home__content reveal-left">
+          <p class="section-kicker">Orbit ready developer</p>
+          <h1 class="home__title">Building clean web experiences with cosmic-level detail.</h1>
+          <p class="home__subtitle">
+            I am Divyanshu Prajapati, aka DSP, a full-stack developer focused on modern interfaces, reliable backends,
+            and ship-ready web projects.
+          </p>
+
+          <div class="home__actions">
+            <a href="#projects" class="btn btn--primary hover-lift">
+              <span>Explore Work</span>
+              <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn--ghost hover-lift">
+              <span>Start a Mission</span>
+            </a>
+          </div>
+
+          <div class="social-dock" aria-label="Profile links">
+            <a href="https://www.linkedin.com/in/your-linkedin-username/" target="_blank" rel="noreferrer"
+              class="social-dock__link hover-lift" aria-label="LinkedIn profile">
+              <i class="bx bxl-linkedin" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/your-github-username" target="_blank" rel="noreferrer"
+              class="social-dock__link hover-lift" aria-label="GitHub profile">
+              <i class="bx bxl-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <div class="mission-strip" aria-label="Portfolio highlights">
+            <div>
+              <strong>2+</strong>
+              <span>Years building</span>
+            </div>
+            <div>
+              <strong>MERN</strong>
+              <span>Core stack</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Learning mode</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="home__visual reveal-right">
+          <div class="orbit-stage" aria-label="Divyanshu profile visual">
+            <div class="orbit-ring orbit-ring--one"></div>
+            <div class="orbit-ring orbit-ring--two"></div>
+            <div class="avatar-card">
+              <img src="dsp2.png" alt="Divyanshu Prajapati" class="avatar-img" />
+            </div>
+            <div class="satellite-chip satellite-chip--top">
+              <i class="bx bx-code-alt" aria-hidden="true"></i>
+              <span>Frontend</span>
+            </div>
+            <div class="satellite-chip satellite-chip--bottom">
+              <i class="bx bx-server" aria-hidden="true"></i>
+              <span>Backend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="section__header reveal-up">
+        <p class="section-kicker">Identity module</p>
+        <h2 class="heading">About <span>DSP</span></h2>
+        <p class="section__subtitle">
+          A developer who likes clean code, sharp visuals, and projects that actually feel good to use.
+        </p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text glass-card reveal-left">
+          <h3>Software Engineer & Tech Enthusiast</h3>
+          <p>
+            My journey into software development started with curiosity about how digital products are built. Since then,
+            I have been learning by shipping real UI experiments, full-stack practice apps, and portfolio projects.
+          </p>
+          <p>
+            I focus on maintainable code, responsive interfaces, scalable data flow, and user experiences that feel fast
+            and polished across devices.
+          </p>
+          <p>
+            Professionally known as DSP, I am growing my full-stack skillset with HTML, CSS, JavaScript, React, Node.js,
+            Express, MongoDB, Git, and deployment workflows.
+          </p>
+        </div>
+
+        <div class="about__stats reveal-right">
+          <div class="stat-card glass-card hover-lift">
+            <i class="bx bx-rocket" aria-hidden="true"></i>
+            <div>
+              <p>Current status</p>
+              <strong>Open to projects</strong>
+              <span>Freelance, internships, collaborations</span>
+            </div>
+          </div>
+          <div class="stat-card glass-card hover-lift">
+            <i class="bx bx-layer" aria-hidden="true"></i>
+            <div>
+              <p>Focus</p>
+              <strong>Full-stack UI</strong>
+              <span>Frontend polish with backend logic</span>
+            </div>
+          </div>
+          <div class="stat-card glass-card hover-lift">
+            <i class="bx bx-globe" aria-hidden="true"></i>
+            <div>
+              <p>Collab mode</p>
+              <strong>Remote ready</strong>
+              <span>Async friendly and project driven</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section-shell" id="education">
+      <div class="section__header reveal-up">
+        <p class="section-kicker">Orbital journey</p>
+        <h2 class="heading">From curiosity to <span>AI web craft</span></h2>
+        <p class="section__subtitle">
+          A cleaner path: fewer buzzwords, more proof of a young builder who kept leveling up.
+        </p>
+      </div>
+
+      <div class="journey-system reveal-up" aria-label="Professional journey timeline">
+        <div class="journey-system__core">
+          <span>18</span>
+          <strong>years old</strong>
+          <p>building with discipline, speed, and taste</p>
+        </div>
+
+        <article class="journey-node journey-node--one glass-card">
+          <span class="journey-node__year">2021</span>
+          <h3>First Launch</h3>
+          <p>
+            Started web development with HTML, CSS, JavaScript, and a serious habit of learning by building.
+          </p>
+        </article>
+
+        <article class="journey-node journey-node--two glass-card">
+          <span class="journey-node__year">2022 - 2023</span>
+          <h3>Full-Stack Orbit</h3>
+          <p>
+            Moved from frontend practice into APIs, databases, authentication, dashboards, and complete product flows.
+          </p>
+        </article>
+
+        <article class="journey-node journey-node--three glass-card">
+          <span class="journey-node__year">2024 - 2025</span>
+          <h3>Product Builder</h3>
+          <p>
+            Built polished full-stack projects with sharper UI, better architecture, and stronger deployment habits.
+          </p>
+        </article>
+
+        <article class="journey-node journey-node--four glass-card">
+          <span class="journey-node__year">Now</span>
+          <h3>Professional AI Web Developer</h3>
+          <p>
+            Focused on AI-powered web apps, scalable systems, automation, security awareness, and production quality.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section-shell" id="skills">
+      <div class="section__header reveal-up">
+        <p class="section-kicker">Skill universe</p>
+        <h2 class="heading">Always <span>expanding</span></h2>
+        <p class="section__subtitle">
+          My skill stack feels like a small solar system: full-stack development is the core, and around it I keep
+          exploring Python, AI/ML, data science, cybersecurity, automation, design systems, and every tool that helps me
+          build smarter products.
+        </p>
+      </div>
+
+      <div class="skill-universe reveal-up">
+        <div class="skill-orbit" aria-hidden="true">
+          <span class="planet planet--core">Full Stack</span>
+          <span class="planet planet--ai">AI / ML</span>
+          <span class="planet planet--python">Python</span>
+          <span class="planet planet--data">Data Science</span>
+          <span class="planet planet--security">Cyber Security</span>
+          <span class="planet planet--cloud">APIs + Deploy</span>
+        </div>
+
+        <div class="skill-ledger glass-card">
+          <h3>Current Build Stack</h3>
+          <div class="skill-pill-grid">
+            <span>React UI</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>REST APIs</span>
+            <span>Auth Systems</span>
+            <span>Dashboards</span>
+            <span>AI Tools</span>
+            <span>Data Thinking</span>
+            <span>Security Basics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-shell" id="projects">
+      <div class="section__header reveal-up">
+        <p class="section-kicker">Full-stack builds</p>
+        <h2 class="heading">Completed <span>Projects</span></h2>
+        <p class="section__subtitle">
+          Fresh, complete, full-stack products with strong interfaces, real flows, and a product-builder mindset.
+        </p>
+      </div>
+
+      <div class="project-showcase">
+        <a class="project-feature project-link glass-card reveal-up" href="https://campusflow-ai.vercel.app"
+          data-project-link="campusflow" aria-label="Open CampusFlow live project">
+          <div class="project-thumb project-thumb--campus" aria-hidden="true">
+            <div class="thumb-topbar"></div>
+            <div class="thumb-hero-line"></div>
+            <div class="thumb-orb"></div>
+            <div class="thumb-card thumb-card--one"></div>
+            <div class="thumb-card thumb-card--two"></div>
+            <div class="thumb-spark"></div>
+          </div>
+          <div class="project-feature__content">
+            <p class="project-card__meta">AI learning platform</p>
+            <h3>CampusFlow</h3>
+            <p>
+              A complete AI learning and growth platform for students, built as a modern full-stack product with clean
+              navigation, learning flows, and a serious dashboard feel.
+            </p>
+            <div class="project-card__tags">
+              <span>Full Stack</span>
+              <span>AI</span>
+              <span>Dashboard</span>
+              <span>Education</span>
+            </div>
+            <span class="project-live">
+              <span>Open live project</span>
+              <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        </a>
+
+        <a class="project-feature project-link glass-card reveal-up" href="https://dsp-space-site.vercel.app"
+          data-project-link="spaceSite" aria-label="Open Space Site live project">
+          <div class="project-thumb project-thumb--space" aria-hidden="true">
+            <div class="thumb-planet"></div>
+            <div class="thumb-ring"></div>
+            <div class="thumb-star thumb-star--one"></div>
+            <div class="thumb-star thumb-star--two"></div>
+            <div class="thumb-panel"></div>
+          </div>
+          <div class="project-feature__content">
+            <p class="project-card__meta">Professional web experience</p>
+            <h3>Space Site</h3>
+            <p>
+              A polished space-themed professional website with immersive visuals, sharp section design, and a premium
+              brand presence built for deployment.
+            </p>
+            <div class="project-card__tags">
+              <span>3D UI</span>
+              <span>Frontend</span>
+              <span>Brand System</span>
+              <span>Responsive</span>
+            </div>
+            <span class="project-live">
+              <span>Open live project</span>
+              <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        </a>
+
+        <a class="project-feature project-link glass-card reveal-up" href="https://tradefxbook-2-0.vercel.app"
+          data-project-link="tradefxbook" aria-label="Open TradeFXBook 2.0 live project">
+          <div class="project-thumb project-thumb--trade" aria-hidden="true">
+            <div class="thumb-chart"></div>
+            <div class="thumb-candle thumb-candle--one"></div>
+            <div class="thumb-candle thumb-candle--two"></div>
+            <div class="thumb-candle thumb-candle--three"></div>
+            <div class="thumb-metric thumb-metric--one"></div>
+            <div class="thumb-metric thumb-metric--two"></div>
+          </div>
+          <div class="project-feature__content">
+            <p class="project-card__meta">Trading journal dashboard</p>
+            <h3>TradeFXBook 2.0</h3>
+            <p>
+              A full-stack trading journal and dashboard for tracking trades, reviewing performance, and turning raw
+              trading behavior into clearer decisions.
+            </p>
+            <div class="project-card__tags">
+              <span>Full Stack</span>
+              <span>Analytics</span>
+              <span>Journal</span>
+              <span>Dashboard</span>
+            </div>
+            <span class="project-live">
+              <span>Open live project</span>
+              <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="section__header reveal-up">
+        <p class="section-kicker">Transmission channel</p>
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <p class="section__subtitle">
+          Got an idea, collab, internship, or freelance project? Send the signal.
+        </p>
+      </div>
+
+      <div class="contact__methods reveal-scale">
+        <a href="mailto:divyanshu.entrep@gmail.com" class="btn btn--primary hover-lift contact-btn">
+          <i class="bx bx-envelope" aria-hidden="true"></i>
+          <span>Email</span>
+        </a>
+        <a href="tel:+918208020933" class="btn btn--ghost hover-lift contact-btn">
+          <i class="bx bx-phone" aria-hidden="true"></i>
+          <span>Call</span>
+        </a>
+        <a href="https://wa.me/918208020933" target="_blank" rel="noreferrer"
+          class="btn btn--whatsapp hover-lift contact-btn">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <form class="contact__form glass-card reveal-up" action="https://formsubmit.co/divyanshu.entrep@gmail.com"
+        method="POST">
+        <input type="hidden" name="_subject" value="New Contact Request from Portfolio!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
+        <h3>Drop a Message</h3>
+        <div class="form__field">
+          <label for="name">Full Name</label>
+          <div class="input-wrapper">
+            <i class="bx bx-user" aria-hidden="true"></i>
+            <input id="name" name="name" type="text" placeholder="John Doe" required />
+          </div>
+        </div>
+
+        <div class="form__field">
+          <label for="email">Email Address</label>
+          <div class="input-wrapper">
+            <i class="bx bx-envelope" aria-hidden="true"></i>
+            <input id="email" name="email" type="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+
+        <div class="form__field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary hover-lift">
+          <span>Send Message</span>
+          <i class="bx bx-send" aria-hidden="true"></i>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <a href="#home" class="logo">
+        <span class="logo__mark">DSP</span>
+        <span class="logo__text">CodeWithDSP</span>
+      </a>
+      <p>18-year-old full-stack builder turning ambition into clean, deployable products.</p>
+    </div>
+
+    <div class="footer__signal" aria-label="Footer links">
+      <a href="https://www.linkedin.com/in/your-linkedin-username/" target="_blank" rel="noreferrer"
+        class="footer__social" aria-label="LinkedIn profile">
+        <i class="bx bxl-linkedin" aria-hidden="true"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/your-github-username" target="_blank" rel="noreferrer" class="footer__social"
+        aria-label="GitHub profile">
+        <i class="bx bxl-github" aria-hidden="true"></i>
+        <span>GitHub</span>
+      </a>
+      <a href="#home" class="footer__top hover-lift" aria-label="Back to top">
+        <i class="bx bx-up-arrow-alt" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/918208020933" target="_blank" rel="noreferrer" class="whatsapp-float hover-lift"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script type="module" src="script.js?v=portfolio-ready-20260517"></script>
+</body>
+
+</html>
